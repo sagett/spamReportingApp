@@ -1,0 +1,29 @@
+.reportList{
+  max-width: 800px;
+  padding: 4px;
+  border: 1px solid #000;
+
+  &_item {
+    &_large {
+      flex: 1;
+    }
+
+    &_button {
+      width: 100px;
+    }
+  }
+
+  &_status_OPEN {
+    color: blue;
+  }
+  &_status_RESOLVE {
+    color: green;
+  }
+  &_status_BLOCK {
+    color: red;
+  }
+
+  &_row {
+    padding-bottom: 4px;
+  }
+}
