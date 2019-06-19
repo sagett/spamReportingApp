@@ -1,0 +1,12 @@
+version: '2'
+services:
+  reportingapp:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: reportingapp
+    volumes:
+      - ./ui/build/:/usr/share/nginx/html
+    ports:
+    - "4460:80"
+    - "4466:8888"
